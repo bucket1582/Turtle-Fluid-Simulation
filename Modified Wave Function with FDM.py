@@ -105,6 +105,8 @@ def drop_water_dot(x, y):
     global water_dots, curr_water_level
     if (x // dx < 0 or x // dx > len(curr_water_level)):
         return
+    if (curr_water_level[int(x // dx)] > y):
+        return
     water_dots.append({"curr_x": x, "curr_y": y, "prev_y": y})
 
 
