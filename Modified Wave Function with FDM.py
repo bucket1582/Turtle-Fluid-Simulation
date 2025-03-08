@@ -92,12 +92,14 @@ def render_drops():
 def simulation_loop():
     global dt, outer_force_index
     t.clear()
+    t.ht()
     update_wave()
     apply_gravity_to_water_dots()
     if outer_force_index != -1:
         outer_force_index = -1
     render_wave()
     render_drops()
+    t.update()
     t.ontimer(simulation_loop, int(dt * 1000))
 
 
