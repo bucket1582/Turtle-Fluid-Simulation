@@ -14,7 +14,7 @@ $$\dfrac{\partial^2 u}{\partial t^2} = c^2\dfrac{\partial^2 u}{\partial x^2}$$
 
 $$\dfrac{\partial^2 u}{\partial t^2} = c^2\dfrac{\partial^2 u}{\partial x^2} + \dfrac{F(x, t)}{m}$$
 
-이때, $F(x, t)$는 위치 $x$, 시점 $t$에 작용하는 외력입니다. 파이썬에서는 if 문으로 구현할 수 있습니다. 하지만 이렇게만 설정한다면, 실제 수면파와 다르가 파동이 사라지지 않고 사인파와 비슷한 형태로 무한히 진동할 것입니다. 따라서 감쇠항을 추가합니다.
+이때, $F(x, t)$는 위치 $x$, 시점 $t$에 작용하는 외력입니다. 파이썬에서는 if 문으로 구현할 수 있습니다. 하지만 이렇게만 설정한다면, 실제 수면파와 다르게 파동이 사라지지 않고 사인파와 비슷한 형태로 무한히 진동할 것입니다. 따라서 감쇠항을 추가합니다.
 
 $$\dfrac{\partial^2 u}{\partial t^2} = c^2\dfrac{\partial^2 u}{\partial x^2} + \dfrac{F(x, t)}{m} - \gamma \dfrac{\partial u}{\partial t}$$
 
